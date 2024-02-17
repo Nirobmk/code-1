@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle>Document</tittle>
+    <style>
+       #image-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+    .content {
+        position: relative;
+        z-index: 1; 
+        padding: 20px; 
+    }
+    body {
+        margin: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f5f0f0;
+    }
+    .container {
+        color:whitesmoke;
+        padding: 40px; 
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    }
+
+    h1 {
+        font-size: 36px; 
+        line-height: 1.5; 
+    }
+
+    header {
+    background-color: rgb(12, 9, 9);
+    text-align: right;
+}
+
+    header a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    header a:hover {
+        color:aqua;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color:#ffffff;
+        font-size: 24px;
+    }
+    .whatido{
+        margin-left: 150px;
+    }
+    #skills-section {
+        position: relative; 
+        top: 150px;
+    }
+    #skills-section h2 {
+    margin-left: 0; 
+}
+.skills-image {
+    max-width: 70%;
+    height: auto;
+    margin-top: -200px; 
+    margin-left: 350px;
+}
+#achievements-section {
+        position: relative; 
+        top: 150px;
+    }
+
+    .achievements-section {
+        margin-top: 60px;
+    }
+    .club {
+                margin-left: 200px;
+            }
+
+    .certificates-section {
+        margin-top: 200px;
+    }
+
+    .certificate-link {
+        display: block;
+        margin-bottom: 10px;
+        color: #ebf0f5;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+
+    }
+
+    .certificate-link:hover {
+        color:orange;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" onclick="scrollToSection('about-section')">About</a>
+        <a href="#" onclick="scrollToSection('skills-section')">Skills</a>
+        <a href="#" onclick="scrollToSection('achievements-section')">Achievements</a>
+        <a href="#" onclick="scrollToSection('resume-section')">Resume</a>
+        <a href="#" onclick="scrollToSection('projects-section')">Projects</a>
+        <a href="#" onclick="scrollToSection('contact-section')">Contact</a>
+    </header>
+    <img id="image-background" src="try3.jpg" alt="Background Image">
+
+     
+    <div class="container">
+        <div class="row" id="about-section">
+            <div class="col-xs-12 col-sm-6">
+                <h1>I'm Niroshini, thrilled to greet you here</h1>
+                <p style="font-family: Trebuchet MS; font-size: 20px;">
+                    Driven and adaptable professional with a fervent interest in web design and full-stack development, eager to delve into the dynamic realm of blockchain technology. Possessing robust analytical prowess, problem-solving skills, and a rapid learning aptitude. Actively honing expertise in cybersecurity, keen to contribute and thrive in a dynamic environment
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="whatido">
+                    <h3 style="font-style: italic; font-weight: bold; margin-top: 50px;">What I do</h3>
+                    <p style="font-family: Trebuchet MS; font-size: 20px;">
+                        currently in the second year of pursuing a Bachelor of Engineering in Computer Science Engineering at Sri Sairam Institute of Technology, West Tambaram, Chennai. Demonstrating a robust academic foundation, highlighted by an outstanding 80% score in 12th grade at Venus Matriculation Higher Secondary School,Chidambaram
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="skills-section">
+            <h2>Skills Section</h2>
+            <h3 style="font-weight:bold">Technical Skills</h3>
+
+            <div class="col-xs-12 col-sm-6">
+                <h4 style="margin-left: 20px;">Programming Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>HTML/CSS</li>
+                    <li>SQL</li>
+                    <li>Basics of Javascript and PHP</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="content">
+                    <h3 style="margin-left:200px;margin-top:-50px;font-weight:bold;">Clubs and Cells</h3>
+                    <ul class="club">
+                        <li>Magic Member in CSS community<p>MasterMind</p></li>
+                        <li>IEEE Member <p>VideoEditing Team</p></li>
+                        <li>Cyber Club</li>
+                        <li>NSS(National Service Scheme)</li>
+                        <li>YRC(Youth Red cross)</li>
+                        <li>Code Club</li>
+                        <li>Skill development club</li>
+                        <li>M-Apps club</li>
+                        <li>Photography club</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row achievements-section" id="achievements-section">
+                <div class="col-xs-12 col-sm-6">
+                    <h2>Achievements</h2>
+                    <p style="font-size:18px;">At ideathons and hackathons, I have been an asset to my teams and helped us reach our goals. We won our college's internal hackathon and went on to compete in the prestigious Smart India Hackathon (SIH), and we placed fifth in the IEEE Idea War event held at our college. To be more specific, we reached the finals of our college's Ideathon.In addition, overcoming stage fright was facilitated by working on numerous paper presentations<p>
+                </div>
+            </div> 
+            <div class="row certificates-section" id="certificates-section">
+                <div class="col-xs-12 col-sm-6">
+                    <h3>Certificates</h3>
+                    <a href="FULL STACK CRASH COURSE 1.pdf" class="certificate-link" target="_blank">Full Stack Crash Course</a>
+                    <a href="Python Bootcamp.pdf" class="certificate-link" target="_blank">Python Bootcamp</a>
+                    <a href="Chatbot Introduction.pdf" class="certificate-link" target="_blank">What is INtroduction to chatbot</a>
+                    <a href="Digital marketing[Google].pdf" class="certificate-link" target="_blank">Digital Marketing[Google]</a>
+                    <a href="AI microsoft.pdf" class="certificate-link" target="_blank">Microsoft AI</a>
+                </div>
+            </div>
+            <div class="row"  id="projects-section">
+                <h2>Project in progress</h2>
+                <div class="col-xs-12 col-sm-6">
+                </div>
+            </br>
+                    <p>MACHINE LEARNING:
+                     Beneath the Waves: Enhancing Underwater Object Identification Technology</p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <p>BLOCKCHAIN TECHNOLOGY:
+                     We're exploring blockchain for a unified payment platform for fines and taxes, aiming to streamline processes and enhance efficiency.</p>
+                </div>
+            
+                <div class="col-xs-12 col-sm-6">
+                    <p>TrainTrackers:
+                    Creating websites equipped with chatbots to deliver train schedule information in various languages. This innovation aims to assist tourists and travelers navigating unfamiliar languages.</p>
+                </div>
+            </div>
+            
+    </div>
+
+
+    
+        <div class="row" id="resume-section">
+            <p style="margin-top: -220px;">Click here to download my resume</p>
+            <a href="CV resume.pdf" class="certificate-link" target="_blank" style="display: inline-block; margin-top: 10px;">
+                <button type="button" style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                    Resume
+                </button>
+            </a>
+        </div>
+        <div class="row" id="contact-section">
+            <h2>Social Media & Contact</h2>
+        
+            <div class="col-xs-12 col-sm-6">
+                <h3 style="font-weight:bold">Connect with Me</h3>
+                <a href="https://www.linkedin.com/in/indravahini-b-s" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" width="50" height="50">
+                </a>
+                <a href="https://www.instagram.com/vahini_1274" target="_blank">
+                    <img src="instagram.jpg" alt="Instagram" width="50" height="50">
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3 style="font-weight:bold">Contact Information</h3>
+                <div style="display: flex; align-items: center;">
+                    <p>Contact No: 9629811618</p>
+                    <a href="mailto:sit22cs086@sairamtap.edu.in">
+                        <img src="mail.png" alt="Email" width="50" height="50">
+                    </a>
+                </div>
+            </div>
+        </br>
+        <footer>
+            <div class="container text-center">
+                <p>&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+            </footer>
+
+        </div>
+        
+    </div> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            $('html, body').animate({
+                scrollTop: $("#" + sectionId).offset().top
+            }, 800);
+        }
+    </script>
+</body>
+</html>
+
